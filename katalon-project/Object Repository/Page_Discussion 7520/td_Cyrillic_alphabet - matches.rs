@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Cyrillic_alphabet - Regex</name>
+   <name>td_Cyrillic_alphabet - matches</name>
    <tag></tag>
    <elementGuidId>642b0af6-28a5-4e3e-ba6e-0e3322ff00c4</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>[a-zA-ZаяАЯ0-9 ]+</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value>//td[(matches(text(), '[\p{L|Nd}\s]+') or matches(., '[\p{L|Nd}\s]+'))]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

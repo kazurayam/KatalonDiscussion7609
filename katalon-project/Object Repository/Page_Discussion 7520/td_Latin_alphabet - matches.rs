@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Latin_alphabet - Regex</name>
+   <name>td_Latin_alphabet - matches</name>
    <tag></tag>
    <elementGuidId>8d65bc0f-cade-49ff-907f-82e04cc1bf76</elementGuidId>
    <selectorCollection>
