@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec" tests="5" skipped="0" failures="1" errors="0" timestamp="2018-07-02T00:45:41" hostname="N01-0370" time="0.141">
+  <properties/>
+  <testcase name="testMatchingLatinAlphabet" classname="com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec" time="0.117"/>
+  <testcase name="testMatchingAnyUNICODE" classname="com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec" time="0.004"/>
+  <testcase name="testMatchingAnyUNICODE_DIGITS_BLANK" classname="com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec" time="0.005">
+    <failure message="java.util.regex.PatternSyntaxException: Unknown character property name {L|Nd} near index 8&#13;&#10;[\p{L|Nd}\s]+&#13;&#10;        ^" type="java.util.regex.PatternSyntaxException">java.util.regex.PatternSyntaxException: Unknown character property name {L|Nd} near index 8
+[\p{L|Nd}\s]+
+        ^
+	at java.util.regex.Pattern.error(Pattern.java:1957)
+	at java.util.regex.Pattern.charPropertyNodeFor(Pattern.java:2783)
+	at java.util.regex.Pattern.family(Pattern.java:2738)
+	at java.util.regex.Pattern.range(Pattern.java:2631)
+	at java.util.regex.Pattern.clazz(Pattern.java:2564)
+	at java.util.regex.Pattern.sequence(Pattern.java:2065)
+	at java.util.regex.Pattern.expr(Pattern.java:1998)
+	at java.util.regex.Pattern.compile(Pattern.java:1698)
+	at java.util.regex.Pattern.&lt;init&gt;(Pattern.java:1351)
+	at java.util.regex.Pattern.compile(Pattern.java:1028)
+	at com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec.testMatchingAnyUNICODE_DIGITS_BLANK(RegexMatchingCyrillicAlphabetSpec.groovy:41)
+</failure>
+  </testcase>
+  <testcase name="testMatchingCyrillicAlphabet_simple" classname="com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec" time="0.005"/>
+  <testcase name="testMatchingCyrillicAlphabet_withBlankAndNumber" classname="com.kazurayam.ksbackyard.RegexMatchingCyrillicAlphabetSpec" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
