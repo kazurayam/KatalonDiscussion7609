@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Cyrillic_alphabet - matches</name>
+   <name>td_Latin_alphabet - xpath equals</name>
    <tag></tag>
-   <elementGuidId>642b0af6-28a5-4e3e-ba6e-0e3322ff00c4</elementGuidId>
+   <elementGuidId>05aac643-2a8f-4273-ab83-c8ba90d1a087</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>[a-zA-ZаяАЯ0-9 ]+</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//td[(matches(text(), '[\p{L|Nd}\s]+') or matches(., '[\p{L|Nd}\s]+'))]</value>
+         <value>//td[(text() = ' IVANOV IVAN 123 ' or . = ' IVANOV IVAN 123 ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,9 +21,9 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>matches regex</matchCondition>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>[\p{L|Nd}\s]+</value>
+      <value> IVANOV IVAN 123 </value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Latin_alphabet - matches</name>
+   <name>td_Cyrillic_alphabet - matches</name>
    <tag></tag>
-   <elementGuidId>8d65bc0f-cade-49ff-907f-82e04cc1bf76</elementGuidId>
+   <elementGuidId>642b0af6-28a5-4e3e-ba6e-0e3322ff00c4</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>[\p{Cyrillic} ]+</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//td[(matches(text(), '^[ ][A-Z0-9 ]+[ ]$') or matches(., '^[ ][A-Z0-9 ]+[ ]$'))]</value>
+         <value>//td[(matches(text(), '[\p{L|Nd}\s]+') or matches(., '[\p{L|Nd}\s]+'))]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -24,6 +28,6 @@
       <matchCondition>matches regex</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>^[ ][A-Z0-9 ]+[ ]$</value>
+      <value>[\p{L|Nd}\s]+</value>
    </webElementProperties>
 </WebElementEntity>

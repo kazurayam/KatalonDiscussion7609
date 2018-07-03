@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Latin_alphabet</name>
+   <name>td_Cyrillic_alphabet - equals</name>
    <tag></tag>
-   <elementGuidId>c3e8cfc8-8915-44ea-a6e0-d68bf3ec8c2c</elementGuidId>
+   <elementGuidId>ea51dbea-890f-4ecb-9317-35a6499c207d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//td[(text() = ' IVANHOV IVAN 123 ' or . = ' IVANHOV IVAN 123 ')]</value>
+         <value>//table/tbody/tr/td[count(. | //td[(text() = ' ИВАНОВ ИВАН 123 ' or . = ' ИВАНОВ ИВАН 123 ')]) = count(//td[(text() = ' ИВАНОВ ИВАН 123 ' or . = ' ИВАНОВ ИВАН 123 ')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> IVANHOV IVAN 123 </value>
+      <value> ИВАНОВ ИВАН 123 </value>
    </webElementProperties>
 </WebElementEntity>

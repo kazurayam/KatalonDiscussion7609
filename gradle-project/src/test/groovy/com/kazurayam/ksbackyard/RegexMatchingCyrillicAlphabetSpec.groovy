@@ -34,11 +34,11 @@ class RegexMatchingCyrillicAlphabetSpec extends Specification {
         then:
         m.matches()
     }
-    
+
     def testMatchingAnyUNICODE_DIGITS_BLANK() {
         setup:
         String s = 'ИВАНОВ ИВАН 123'
-        Pattern p = Pattern.compile(/[\p{L|Nd}\s]+/)
+        Pattern p = Pattern.compile(/[\p{L}\p{Digit}\s]+/)
         when:
         Matcher m = p.matcher(s)
         then:
@@ -54,7 +54,7 @@ class RegexMatchingCyrillicAlphabetSpec extends Specification {
         then:
         m.matches()
     }
-    
+
     def testMatchingCyrillicAlphabet_withBlankAndNumber() {
         setup:
         String s = ' ИВАНОВ ИВАН 123 '
